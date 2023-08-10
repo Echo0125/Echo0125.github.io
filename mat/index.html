@@ -18,7 +18,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <title>Memory-and-Anticipation Transformer for Online &#13;Action Detection and Anticipation</title>
+  <title>Memory-and-Anticipation Transformer for Online &#13;Action Understanding</title>
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="canonical" href="https://echo0125.github.io/mat/" />
@@ -26,14 +26,14 @@
 
   <meta property="og:site_name" content="MAT" />
   <meta property="og:type" content="video.other" />
-  <meta property="og:title" content="Memory-and-Anticipation Transformer for Online &#13;Action Detection and Anticipation" />
-  <meta property="og:description" content="Jiahao Wang, Guo Chen, Yifei Huang, Limin Wang, Tong Lu. Memory-and-Anticipation Transformer for Online Action Detection and Anticipation. ICCV 2023." />
+  <meta property="og:title" content="Memory-and-Anticipation Transformer for Online &#13;Action Understanding" />
+  <meta property="og:description" content="Jiahao Wang, Guo Chen, Yifei Huang, Limin Wang, Tong Lu. Memory-and-Anticipation Transformer for Online Action Understanding. ICCV 2023." />
   <meta property="og:url" content="https://echo0125.github.io/mat/" />
 
   <meta property="article:publisher" content="https://github.com/echo0125" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Memory-and-Anticipation Transformer for Online Action Detection and Anticipation" />
-  <meta name="twitter:description" content="Jiahao Wang, Guo Chen, Yifei Huang, Limin Wang, Tong Lu. Memory-and-Anticipation Transformer for Online Action Detection and Anticipation. ICCV 2023." />
+  <meta name="twitter:title" content="Memory-and-Anticipation Transformer for Online Action Understanding" />
+  <meta name="twitter:description" content="Jiahao Wang, Guo Chen, Yifei Huang, Limin Wang, Tong Lu. Memory-and-Anticipation Transformer for Online Action Understanding. ICCV 2023." />
   <meta name="twitter:url" content="https://echo0125.github.io/mat/" />
   <meta name="twitter:site" content="@ajayj_" />
   <meta property="og:image:width" content="1600" />
@@ -42,13 +42,13 @@
 
 <body>
       <br>
-      <center><span style="font-size:44px;font-weight:bold;">Memory-and-Anticipation Transformer for Online<br>Action Detection and Anticipation</span></center><br/>
+      <center><span style="font-size:44px;font-weight:bold;">Memory-and-Anticipation Transformer for Online<br>Action Understanding</span></center><br/>
       <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
-          <div><center><span style="font-size:18px"><a href="https://echo0125.github.io/" target="_blank">Jiahao Wang</a></span></center>
+          <div><center><span style="font-size:18px"><a href="https://echo0125.github.io/" target="_blank">Jiahao Wang*</a></span></center>
           <center><span style="font-size:18px">Nanjing University</span></center>
           </div>
 
-          <div><center><span style="font-size:18px"><a href="https://chenguo.netlify.app/" target="_blank">Guo Chen</a></span></center>
+          <div><center><span style="font-size:18px"><a href="https://chenguo.netlify.app/" target="_blank">Guo Chen*</a></span></center>
           <center><span style="font-size:18px">Nanjing University</span></center>
           </div>
 
@@ -76,11 +76,11 @@
 
       <div style="width:800px; margin:0 auto; text-align=right;">
       <p>
-      <b>Summary:</b> We present Memory-and-Anticipation Transformer (MAT), a novel memory-anticipation-based paradigm for online action detection and anticipation, to overcome the weakness of most existing methods that can only complete modeling temporal dependency within a limited historical context. Through extensive experiments on four challenging benchmarks across two tasks, we show its applicability in predicting present or future actions, obtaining state-of-the-art results, and demonstrating the importance of circular interaction between memory and anticipation in the entire temporal structure.
+      <b>Summary:</b> We present Memory-and-Anticipation Transformer (MAT), a novel memory-anticipation-based paradigm for online Action Understanding, to overcome the weakness of most existing methods that can only complete modeling temporal dependency within a limited historical context. Through extensive experiments on four challenging benchmarks across two tasks, we show its applicability in predicting present or future actions, obtaining state-of-the-art results, and demonstrating the importance of circular interaction between memory and anticipation in the entire temporal structure.
     </p>
       <a href="resources/story_new.png"><img width="600" max-width="100%" src="resources/story_new.png" /></a>
       <p>
-        <b>Abstract:</b> Most existing forecasting systems are memory-based methods, which attempt to mimic human forecasting ability by employing various memory mechanisms and have progressed in temporal modeling for memory dependency. Nevertheless, an obvious weakness of this paradigm is that it can only model limited historical dependence and can not transcend the past. In this paper, we rethink the temporal dependence of event evolution and propose a novel memory-anticipation-based paradigm to model an entire temporal structure, including the past, present, and future. Based on this idea, we present Memory-and-Anticipation Transformer (MAT), a memory-anticipation-based approach, to address the online action detection and anticipation tasks. In addition, owing to the inherent superiority of MAT, it can process online action detection and anticipation tasks in a unified manner. The proposed MAT model is tested on four challenging benchmarks TVSeries, THUMOS'14, HDD, and EPIC-Kitchens-100, for online action detection and anticipation tasks, and it significantly outperforms all existing methods.
+        <b>Abstract:</b> Most existing forecasting systems are memory-based methods, which attempt to mimic human forecasting ability by employing various memory mechanisms and have progressed in temporal modeling for memory dependency. Nevertheless, an obvious weakness of this paradigm is that it can only model limited historical dependence and can not transcend the past. In this paper, we rethink the temporal dependence of event evolution and propose a novel memory-anticipation-based paradigm to model an entire temporal structure, including the past, present, and future. Based on this idea, we present Memory-and-Anticipation Transformer (MAT), a memory-anticipation-based approach, to address the online Action Understanding tasks. In addition, owing to the inherent superiority of MAT, it can process online Action Understanding tasks in a unified manner. The proposed MAT model is tested on four challenging benchmarks TVSeries, THUMOS'14, HDD, and EPIC-Kitchens-100, for online action detection and anticipation tasks, and it significantly outperforms all existing methods.
       </p>
       </div>
       <center>
@@ -139,7 +139,7 @@
               <p style="text-align:left;">
                 <b><span style="font-size:20pt">Citation</span></b>
                 <br/>
-                <span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Jiahao Wang, Guo Chen, Yifei Huang, Limin Wang, Tong Lu. <br><b>Memory-and-Anticipation Transformer for Online Action Detection and Anticipation.</b> <br>In <em>International Conference on Computer Vision (ICCV)</em>, 2023.</span></p>
+                <span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Jiahao Wang, Guo Chen, Yifei Huang, Limin Wang, Tong Lu. <br><b>Memory-and-Anticipation Transformer for Online Action Understanding.</b> <br>In <em>International Conference on Computer Vision (ICCV)</em>, 2023.</span></p>
               </td>
               </tr>
               <tr>
@@ -152,7 +152,7 @@
 <pre xml:space="preserve">
 @inproceedings{wang2023mat,
     title={Memory-and-Anticipation Transformer 
-    for Online Action Detection and Anticipation},
+    for Online Action Understanding},
     author={Jiahao Wang and Guo Chen and 
     Yifei Huang and Limin Wang and Tong Lu},
     year={2023},
